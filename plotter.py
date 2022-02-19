@@ -68,7 +68,7 @@ class DeviceDisplay(QGraphicsView):
         for j in range(ndev):
             self.ax[j] = self.figure.add_subplot(231+j)
             for i in range(nch):
-                l, = self.ax[j].plot([],[], linewidth=1, label=namedet[i])
+                l, = self.ax[j].plot([],[], linewidth=0, marker='.', label=namedet[i])
                 self.lines[j].append(l)
         
             # autoscale on unknown axis
