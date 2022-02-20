@@ -108,7 +108,7 @@ def main(argv):
         logHVstatus(HVlogfile, now)
         
         if lastHVread < now + datetime.timedelta(minutes =-deltaMinutes):
-            if vebose:
+            if verbose:
                 print("last time HV was read: ", lastHVread.strftime('%Y-%m-%d_%H:%M:%S'))
                 print("now : ", now.strftime('%Y-%m-%d_%H:%M:%S'))
             logHVread(HVreadfile)
